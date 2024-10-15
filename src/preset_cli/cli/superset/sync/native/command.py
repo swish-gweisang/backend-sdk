@@ -174,7 +174,6 @@ def native(  # pylint: disable=too-many-locals, too-many-arguments, too-many-bra
     url = URL(ctx.obj["INSTANCE"])
     client = SupersetClient(url, auth)
     root = Path(directory)
-
     base_url = URL(external_url_prefix) if external_url_prefix else None
 
     # collecting existing database UUIDs so we know if we're creating or updating
